@@ -11,10 +11,10 @@ section {
   background-repeat: no-repeat; }
   section .introduction {
     position: relative;
-    top: 45%;
-    -webkit-transform: translateY(-45%);
-    -ms-transform: translateY(-45%);
-    transform: translateY(-45%); }
+    top: 47%;
+    -webkit-transform: translateY(-47%);
+    -ms-transform: translateY(-47%);
+    transform: translateY(-47%); }
     section .introduction:before, section .introduction:after {
       content: "";
       display: block;
@@ -26,26 +26,63 @@ section {
       margin-bottom: 5em; }
     section .introduction:after {
       margin-top: 5em; }
+    section .introduction h1 {
+      margin: 0; }
+
+section.page-hero {
+  height: 720px;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  section.page-hero .introduction {
+    width: 35%;
+    margin: 0 auto; }
+
+.scroll-down {
+  position: absolute;
+  bottom: 75px; }
 
 section#home {
   background-image: url("../img/home-hero.jpg");
   width: 100%;
   height: 100%;
   text-align: center; }
-  section#home h1 {
-    margin: 0; }
+
+section#about {
+  background-image: url("../img/about-hero.jpg"); }
+
+section.content-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 6.5em 0; }
+  section.content-section h1, section.content-section h2, section.content-section h3 {
+    margin-top: 0;
+    text-align: center; }
+  section.content-section h3 {
+    margin-bottom: 2em; }
+  section.content-section p {
+    margin-bottom: 4em; }
+  section.content-section .call-to-action {
+    text-align: center; }
+
+section#our-cars {
+  background-image: url("../img/background-muted-interior.jpg"); }
 
 .strip {
   height: 135px;
   width: 100%;
   background-repeat: repeat-x; }
 
-.strip-one {
-  background-image: url("../img/strip-one.jpg"); }
-
 .home-strip {
   position: absolute;
   bottom: 0; }
+
+.strip-one {
+  background-image: url("../img/strip-one.jpg"); }
+
+.strip-two {
+  background-image: url("../img/strip-two.jpg"); }
 
 a {
   -webkit-transition: color, 400ms;
@@ -59,9 +96,18 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 16px; }
 
+h3 {
+  font-size: 24px;
+  letter-spacing: 10px; }
+
+p {
+  text-transform: lowercase;
+  font-weight: 300; }
+
 #nav-container {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 99; }
 
 #main-nav {
   background: #181517;
@@ -86,5 +132,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo a img:hover {
   opacity: 0.7; }
+
+a.button {
+  background: none;
+  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 15px 65px 12px 65px;
+  border: 2px solid #fff;
+  -webkit-transition: background, 400ms;
+  -moz-transition: background, 400ms;
+  -transition: background, 400ms; }
+  a.button:hover {
+    background: #fff;
+    color: #181517; }
 
 /*# sourceMappingURL=style.css.map */

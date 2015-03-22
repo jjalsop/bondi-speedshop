@@ -12,4 +12,3 @@
   <section class="strip strip-one home-strip"></section>
 </body>
 <?php include("inc/scripts.html"); ?> 
-
