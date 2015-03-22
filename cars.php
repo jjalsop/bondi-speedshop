@@ -12,7 +12,7 @@
   </section>
   <section class="strip strip-one"></section>
   <section id="car-listing">
-    <a href="#" class="car-link">
+    <a href="car.php" class="car-link">
       <div class="car-in-list" style="background-image:url(img/test-car.jpg)">
         <div class="black-overlay">
           <div class="car-details">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </a>
-    <a href="#" class="car-link">
+    <a href="car.php" class="car-link">
       <div class="car-in-list" style="background-image:url(img/test-car.jpg)">
         <div class="black-overlay">
           <div class="car-details">
@@ -32,7 +32,7 @@
         </div>
       </div>
     </a>
-    <a href="#" class="car-link">
+    <a href="car.php" class="car-link">
       <div class="car-in-list" style="background-image:url(img/test-car.jpg)">
         <div class="black-overlay">
           <div class="car-details">
@@ -42,7 +42,7 @@
         </div>
       </div>
     </a>
-    <a href="#" class="car-link">
+    <a href="car.php" class="car-link">
       <div class="car-in-list" style="background-image:url(img/test-car.jpg)">
         <div class="black-overlay">
           <div class="car-details">

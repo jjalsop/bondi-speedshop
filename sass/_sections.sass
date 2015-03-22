@@ -26,7 +26,7 @@ section
 		h1 
 			margin: 0
 // hero panels at the top of inner-pages
-section.page-hero 
+section.page-hero, section.car-hero
 	height: 720px
 	width: 100%
 	text-align: center
@@ -39,6 +39,12 @@ section.page-hero
 		margin: 0 auto
 		+at($small)
 			width: 90%
+section.car-hero 
+	min-height: 655px
+	.introduction 
+		width: 50%
+		padding-top: 6em
+
 // inner-page "scroll down" helper arrows
 .scroll-down 
 	position: absolute
@@ -86,14 +92,17 @@ section#car-listing
 		+vertical-align
 		p 
 			color: #fff
+.black-overlay
+	background-color: rgba(0,0,0,0.6)
+	width: 100%
+	height: 100%
+	position: relative
+	top: -3px
+	+animate(top, 400ms)
+	+animate(background-color, 400ms)
+section.car-hero 
 	.black-overlay
-		background-color: rgba(0,0,0,0.6)
-		width: 100%
-		height: 100%
-		position: relative
-		top: -3px
-		+animate(top, 400ms)
-		+animate(background-color, 400ms)
+		top: 0
 .car-link:hover 
 	h3 
 		margin-bottom: 3em

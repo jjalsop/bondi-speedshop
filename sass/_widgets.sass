@@ -1,0 +1,22 @@
+// car slider
+#slider .item 
+	height: 570px
+	width: 100%
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center top
+.owl-controls 
+	position: absolute
+	top: 50%
+	margin: 0
+	width: 100%
+.owl-next 
+	position: absolute
+	right: 50px
+.owl-prev
+	position: absolute
+	left: 50px
+.owl-next, .owl-prev
+	+animate(opacity, 400ms)
+	&:hover 
+		opacity: 0.8
