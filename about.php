@@ -1,7 +1,7 @@
 <?php include("inc/head-one.html"); ?>
   <title>Bondi Speed Shop – About</title>
 <?php include("inc/head-two.html"); ?>
-<body>
+<body id="about">
 <?php include("inc/nav.html"); ?>
   <section id="about" class="page-hero">
     <div class="introduction">

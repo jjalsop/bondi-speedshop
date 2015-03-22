@@ -89,7 +89,6 @@ section#cars
 section#car-listing
 	+clearfix
 .car-in-list
-	background-color: red
 	width: 50%
 	float: left
 	box-sizing: border-box
@@ -190,19 +189,25 @@ p
 	z-index: 99
 #main-nav
 	background: $black
-	padding: 2em 0
+	padding-top: 2em
 	font-weight: 300
 	ul 
 		margin: 1em 0 0 0
 		list-style: none 
 		li 
 			display: inline-block
-			margin-left: 3em
+			height: 100%
+			width: 70px
+			text-align: center
+			padding-bottom: 3em
+			margin-left: 1em
 			a 
 				color: darken(#fff, 15%)
 				font-family: $sans
 				&:hover
 					color: darken(#fff, 35%)
+		li.active-page
+			border-bottom: 3px solid #fff
 .logo a img
 	+animate(opacity, 400ms)
 .logo a img:hover 
