@@ -265,10 +265,25 @@ input[type="text"], input[type="email"], textarea
 	box-shadow: none 
 	border: none
 	border-bottom: 1px solid #fff
-	margin-bottom: 2em
 	color: #fff
 	+animate(border-bottom, 400ms)
 	&:focus, &:active 
 		background: none
 		border-bottom: 1px solid darken(#fff, 60%)
+button[type="submit"]
+	margin-top: 2em
+.error
+	input[type="text"], input[type="email"], textarea
+		color: red
+	::-webkit-input-placeholder
+		color: red
+	:-moz-placeholder
+		color: red
+		opacity: 1
+	::-moz-placeholder
+		color: red
+		opacity: 1
+	:-ms-input-placeholder
+		color: red
+
 

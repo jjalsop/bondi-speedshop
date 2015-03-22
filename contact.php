@@ -1,5 +1,5 @@
 <?php include("inc/head-one.html"); ?>
-  <title>Bondi Speed Shop – Cars</title>
+  <title>Bondi Speed Shop – Contact</title>
 <?php include("inc/head-two.html"); ?>
 <body id="contact">
 <?php include("inc/nav.html"); ?>
@@ -16,28 +16,33 @@
     </div>
     <div class="row">
       <div class="medium-4 columns medium-centered">
-        <form action="#">
+        <form action="#" data-abide>
           <div class="row">
             <div class="medium-12 columns">
-              <input type="text" placeholder="First name">
+              <input type="text" placeholder="First name" required>
+              <small class="error">Please enter your first name.</small>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
-              <input type="text" placeholder="Last name">
+              <input type="text" placeholder="Last name" required>
+              <small class="error">Please enter your last name.</small>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
-              <input type="email" placeholder="Email address">
+              <input type="email" placeholder="Email address" required>
+              <small class="error">Please enter a valid email address.</small>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
-              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+              <small class="error">Please enter a message.</small>
             </div>
           </div>
-          <submit class="button full-width">Send</submit>
+          <button type="submit" class="button full-width">Send</button>
+
         </form>
       </div>
     </div>
