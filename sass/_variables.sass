@@ -1,0 +1,32 @@
+// colors
+$black: #181517
+
+// breakpoints
+$small: 720px
+$abovesmall: 960px
+$medium: 1080px
+$large: 1140px
+$abovelarge: 1440px
+
+// fonts 
+$sans: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+// mixins 
+@mixin animate($property, $time)
+	-webkit-transition: $property, $time
+	-moz-transition: $property, $time
+	-transition: $property, $time
+@mixin at($width)
+	@media screen and (max-width: $width)
+		@content
+@mixin clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+@mixin vertical-align
+	position: relative
+	top: 47%
+	-webkit-transform: translateY(-47%)
+	-ms-transform: translateY(-47%)
+	transform: translateY(-47%)
