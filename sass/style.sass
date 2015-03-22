@@ -1,0 +1,64 @@
+// colors
+$black: #181517
+
+// breakpoints
+$small: 420px
+$abovesmall: 960px
+$medium: 1080px
+$large: 1140px
+$abovelarge: 1440px
+
+// fonts 
+$sans: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+// mixins 
+@mixin animate($property, $time)
+	-webkit-transition: $property, $time
+	-moz-transition: $property, $time
+	-transition: $property, $time
+@mixin at($width)
+	@media screen and (max-width: $width)
+		@content
+@mixin clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+// resets
+html, body
+	height: 100%
+body 
+	font-size: 16px
+
+// sections
+section
+	background-size: cover
+	background-repeat: no-repeat
+section#home 
+	background-image: url("../img/home-hero.jpg")
+	width: 100%
+	height: 100% 
+
+// type and links
+a 
+	+animate(color, 400ms)
+
+// navigation
+#main-nav
+	background: $black
+	padding: 2em 0
+	font-weight: 300
+	ul 
+		margin: 1em 0 0 0
+		list-style: none 
+		li 
+			display: inline-block
+			margin-left: 3em
+			a 
+				color: darken(#fff, 15%)
+				font-family: $sans
+				&:hover
+					color: darken(#fff, 35%)
+
+
