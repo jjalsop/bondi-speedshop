@@ -84,6 +84,11 @@ section#about
 // cars hero
 section#cars 
 	background-image: url("../img/cars-hero.jpg")
+// contact hero
+section#contact 
+	background-image: url("../img/contact-hero.jpg")
+	height: 655px
+	padding-top: 5em
 
 // car listing 
 section#car-listing
@@ -129,6 +134,7 @@ section.content-section
 	background-repeat: no-repeat
 	background-position: center top
 	padding: 6.5em 0
+	background: $black
 	h1, h2, h3 
 		margin-top: 0
 		text-align: center
@@ -235,7 +241,7 @@ footer
 			margin-left: 3em
 
 // buttons 
-a.button 
+.button 
 	background: none
 	font-family: $sans
 	text-transform: uppercase
@@ -247,4 +253,19 @@ a.button
 	&:hover 
 		background: #fff
 		color: $black
+.button.full-width
+	width: 100%
+
+// forms
+input[type="text"], input[type="email"], textarea 
+	background: none
+	box-shadow: none 
+	border: none
+	border-bottom: 1px solid #fff
+	margin-bottom: 2em
+	color: #fff
+	+animate(border-bottom, 400ms)
+	&:focus, &:active 
+		background: none
+		border-bottom: 1px solid darken(#fff, 60%)
 

@@ -54,6 +54,11 @@ section#about {
 section#cars {
   background-image: url("../img/cars-hero.jpg"); }
 
+section#contact {
+  background-image: url("../img/contact-hero.jpg");
+  height: 655px;
+  padding-top: 5em; }
+
 section#car-listing:after {
   content: "";
   display: table;
@@ -110,7 +115,8 @@ section.content-section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  padding: 6.5em 0; }
+  padding: 6.5em 0;
+  background: #181517; }
   section.content-section h1, section.content-section h2, section.content-section h3 {
     margin-top: 0;
     text-align: center; }
@@ -222,7 +228,7 @@ footer {
       display: inline-block;
       margin-left: 3em; }
 
-a.button {
+.button {
   background: none;
   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
@@ -233,8 +239,25 @@ a.button {
   -webkit-transition: background, 400ms;
   -moz-transition: background, 400ms;
   -transition: background, 400ms; }
-  a.button:hover {
+  .button:hover {
     background: #fff;
     color: #181517; }
+
+.button.full-width {
+  width: 100%; }
+
+input[type="text"], input[type="email"], textarea {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2em;
+  color: #fff;
+  -webkit-transition: border-bottom, 400ms;
+  -moz-transition: border-bottom, 400ms;
+  -transition: border-bottom, 400ms; }
+  input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, input[type="email"]:active, textarea:focus, textarea:active {
+    background: none;
+    border-bottom: 1px solid #666666; }
 
 /*# sourceMappingURL=style.css.map */
