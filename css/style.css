@@ -12,12 +12,19 @@ section {
       display: block;
       height: 1px;
       background-color: rgba(255, 255, 255, 0.4);
-      width: 210px;
+      max-width: 210px;
+      width: 40%;
       margin: 0 auto; }
     section .introduction:before {
       margin-bottom: 5em; }
+      @media screen and (max-width: 720px) {
+        section .introduction:before {
+          margin-bottom: 1em; } }
     section .introduction:after {
       margin-top: 5em; }
+      @media screen and (max-width: 720px) {
+        section .introduction:after {
+          margin-top: 1em; } }
     section .introduction h1 {
       margin: 0; }
 
@@ -26,13 +33,24 @@ section.page-hero {
   width: 100%;
   text-align: center;
   position: relative; }
+  @media screen and (max-width: 720px) {
+    section.page-hero {
+      height: 400px;
+      padding-top: 3em; } }
   section.page-hero .introduction {
     width: 35%;
     margin: 0 auto; }
+    @media screen and (max-width: 720px) {
+      section.page-hero .introduction {
+        width: 90%; } }
 
 .scroll-down {
   position: absolute;
-  bottom: 75px; }
+  bottom: 75px;
+  margin-left: -20px; }
+  @media screen and (max-width: 720px) {
+    .scroll-down {
+      display: none; } }
 
 section#home {
   background-image: url("../img/home-hero.jpg");
@@ -50,6 +68,9 @@ section#contact {
   background-image: url("../img/contact-hero.jpg");
   height: 655px;
   padding-top: 5em; }
+  @media screen and (max-width: 720px) {
+    section#contact {
+      height: 400px; } }
 
 section#car-listing:after {
   content: "";
@@ -172,9 +193,18 @@ p {
   background: #181517;
   padding-top: 2em;
   font-weight: 300; }
+  @media screen and (max-width: 720px) {
+    #main-nav {
+      padding: 1em 0; } }
   #main-nav ul {
     margin: 1em 0 0 0;
-    list-style: none; }
+    list-style: none;
+    display: block; }
+    @media screen and (max-width: 720px) {
+      #main-nav ul {
+        display: none;
+        float: left !important;
+        width: 100%; } }
     #main-nav ul li {
       display: inline-block;
       height: 100%;
@@ -182,21 +212,56 @@ p {
       text-align: center;
       padding-bottom: 3em;
       margin-left: 1em; }
+      @media screen and (max-width: 720px) {
+        #main-nav ul li {
+          display: block;
+          text-align: left;
+          margin-left: 0;
+          width: 100%;
+          padding: 0; } }
       #main-nav ul li a {
         color: #d9d9d9;
         font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
         #main-nav ul li a:hover {
           color: #a6a6a6; }
+        @media screen and (max-width: 720px) {
+          #main-nav ul li a {
+            width: 100%;
+            display: block;
+            padding: 2em 0;
+            border-top: 1px solid #333333; } }
     #main-nav ul li.active-page {
       border-bottom: 3px solid #fff; }
+      @media screen and (max-width: 720px) {
+        #main-nav ul li.active-page {
+          border: none;
+          font-weight: bold; } }
 
 .logo a img {
   -webkit-transition: opacity, 400ms;
   -moz-transition: opacity, 400ms;
   -transition: opacity, 400ms; }
+  @media screen and (max-width: 720px) {
+    .logo a img {
+      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6); } }
 
 .logo a img:hover {
   opacity: 0.7; }
+
+.mobile-menu-trigger {
+  display: none; }
+  .mobile-menu-trigger a {
+    color: #fff;
+    font-size: 30px; }
+  @media screen and (max-width: 720px) {
+    .mobile-menu-trigger {
+      display: block;
+      float: right;
+      position: relative;
+      top: 3px;
+      left: -15px; } }
 
 footer {
   background: #181517;

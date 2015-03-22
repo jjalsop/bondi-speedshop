@@ -12,12 +12,17 @@ section
 			display: block
 			height: 1px
 			background-color: rgba(255,255,255,0.4)
-			width: 210px
+			max-width: 210px
+			width: 40%
 			margin: 0 auto
 		&:before 
 			margin-bottom: 5em
+			+at($small)
+				margin-bottom: 1em
 		&:after 
 			margin-top: 5em
+			+at($small)
+				margin-top: 1em
 		h1 
 			margin: 0
 // hero panels at the top of inner-pages
@@ -26,13 +31,21 @@ section.page-hero
 	width: 100%
 	text-align: center
 	position: relative
+	+at($small)
+		height: 400px
+		padding-top: 3em
 	.introduction
 		width: 35%
 		margin: 0 auto
+		+at($small)
+			width: 90%
 // inner-page "scroll down" helper arrows
 .scroll-down 
 	position: absolute
 	bottom: 75px
+	margin-left: -20px
+	+at($small)
+		display: none
 // home hero
 section#home 
 	background-image: url("../img/home-hero.jpg")
@@ -50,6 +63,8 @@ section#contact
 	background-image: url("../img/contact-hero.jpg")
 	height: 655px
 	padding-top: 5em
+	+at($small)
+		height: 400px
 
 // car listing 
 section#car-listing

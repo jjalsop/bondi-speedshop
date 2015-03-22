@@ -7,9 +7,16 @@
 	background: $black
 	padding-top: 2em
 	font-weight: 300
+	+at($small)
+		padding: 1em 0
 	ul 
 		margin: 1em 0 0 0
 		list-style: none 
+		display: block
+		+at($small)
+			display: none
+			float: left!important
+			width: 100%
 		li 
 			display: inline-block
 			height: 100%
@@ -17,17 +24,46 @@
 			text-align: center
 			padding-bottom: 3em
 			margin-left: 1em
+			+at($small)
+				display: block
+				text-align: left
+				margin-left: 0
+				width: 100%
+				padding: 0
 			a 
 				color: darken(#fff, 15%)
 				font-family: $sans
 				&:hover
 					color: darken(#fff, 35%)
+				+at($small)
+					width: 100%
+					display: block
+					padding: 2em 0
+					border-top: 1px solid darken(#fff, 80%)
 		li.active-page
 			border-bottom: 3px solid #fff
+			+at($small)
+				border: none 
+				font-weight: bold
 .logo a img
 	+animate(opacity, 400ms)
+	+at($small)
+		transform: scale(0.6)
+		-webkit-transform: scale(0.6)
+		-moz-transform: scale(0.6)
 .logo a img:hover 
 	opacity: 0.7
+.mobile-menu-trigger
+	display: none 
+	a 
+		color: #fff
+		font-size: 30px
+	+at($small)
+		display: block
+		float: right
+		position: relative
+		top: 3px
+		left: -15px
 
 // footer
 footer 
