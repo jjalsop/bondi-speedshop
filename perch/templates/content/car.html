@@ -11,18 +11,15 @@
   <section class="content-section">
     <div class="row medium-4 columns medium-centered">
       <h3>About this car</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque veritatis nostrum iure, quidem eos itaque, sit odio error quae hic porro temporibus rerum facilis beatae dolore molestias a cupiditate minima nulla nemo. Fugiat, voluptatibus, quis!</p>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ipsum consequuntur blanditiis, aperiam maxime, accusantium modi et necessitatibus dolores minima reiciendis voluptatem nostrum veritatis maiores quas laborum dicta saepe repellat laboriosam vero placeat magni debitis cumque voluptatum. Animi quaerat reiciendis et? Fugit ipsam dolorem, consectetur.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt inventore aliquam, commodi culpa ad omnis accusamus eveniet dolorem dolorum, cum, voluptatum quidem repellendus, dolor possimus.</p>
+      <perch:content id="description" type="textarea" label="Car Description" markdown="true" />
     </div>
   </section>
   <section id="car-slides">
     <div id="slider" class="owl-carousel owl-theme">
-      <div class="item" style="background-image:url(img/test-image.jpg);"></div>
-      <div class="item" style="background-image:url(img/test-image.jpg);"></div>
-      <div class="item" style="background-image:url(img/test-image.jpg);"></div>
+      <perch:repeater id="images" label="Car Images">
+          <div class="item" style="background-image:url(<perch:content type="image" id="image" label="Image" />);"></div>
+      </perch:repeater>
     </div>
   </section>
   <section class="content-section">
