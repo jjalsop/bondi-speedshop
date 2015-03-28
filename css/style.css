@@ -329,8 +329,11 @@ input[type="text"], input[type="email"], textarea {
     background: none;
     border-bottom: 1px solid #666666; }
 
-button[type="submit"] {
+#form1_submit {
   margin-top: 2em; }
+
+form {
+  margin: 0; }
 
 .error {
   -moz-placeholder-color: red;
@@ -343,6 +346,28 @@ button[type="submit"] {
   .error ::-moz-placeholder {
     color: red;
     opacity: 1; }
+
+@-webkit-keyframes slideIn {
+  from {
+    top: -200px; }
+  to {
+    top: 0; } }
+@keyframes slideIn {
+  from {
+    top: 0; }
+  to {
+    top: -200px; } }
+.success {
+  position: fixed;
+  top: 0;
+  z-index: 900;
+  -webkit-animation: slideIn 650ms linear;
+  animation: slideIn 650ms linear;
+  width: 100%;
+  background-color: #00cc7c;
+  padding: 30px; }
+  .success p {
+    margin: 0; }
 
 #slider .item {
   height: 570px;

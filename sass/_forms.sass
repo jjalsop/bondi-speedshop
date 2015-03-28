@@ -9,8 +9,10 @@ input[type="text"], input[type="email"], textarea
 	&:focus, &:active 
 		background: none
 		border-bottom: 1px solid darken(#fff, 60%)
-button[type="submit"]
+#form1_submit
 	margin-top: 2em
+form
+	margin: 0
 .error
 	input[type="text"], input[type="email"], textarea
 		color: red
@@ -24,3 +26,28 @@ button[type="submit"]
 		opacity: 1
 	:-ms-input-placeholder
 		color: red
+
+
+@-webkit-keyframes slideIn 
+	from
+		top: -200px
+	to
+		top: 0
+@keyframes slideIn 
+	from
+		top: 0
+	to
+		top: -200px
+
+.success
+	position: fixed
+	top: 0
+	z-index: 900
+	-webkit-animation: slideIn 650ms linear
+	animation: slideIn 650ms linear
+	width: 100%
+	background-color: #00cc7c
+	padding: 30px
+	p 
+		margin: 0
+

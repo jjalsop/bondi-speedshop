@@ -1,0 +1,44 @@
+  <perch:form id="contact" method="post" app="perch_forms">
+
+  <perch:success show-form="true">
+      <div class="success"><p><strong>Thanks!</strong> Your enquiry has been sent and we'll be in touch soon.</p></div>
+  </perch:success>
+
+  <section id="contact" class="page-hero">
+    <div class="introduction">
+      <h1>Contact</h1>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="row">
+      <div class="medium-4 columns medium-centered">
+        <h3>Get in touch</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="medium-4 columns medium-centered">
+
+            <div>
+                <perch:input type="text" id="name" required="true" label="Name" placeholder="Your name"/>
+                <small class="error">Please enter your first name.</small>
+            </div>
+
+            <div>
+                <perch:input type="email" id="email" required="true" label="Email" placeholder="Your email address" />
+                <small class="error">Please a valid email address..</small>
+            </div>
+
+            <div>
+                <perch:input type="textarea" id="message" required="true" label="Message" placeholder="Your message" rows="10" />
+                <small class="error">Please enter a message.</small>
+            </div>
+
+            <div>
+                <perch:input type="submit" id="submit" value="Send" class="button full-width" />
+            </div>
+
+            
+        </perch:form>
+      </div>
+    </div>
+  </section>

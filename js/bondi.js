@@ -1,11 +1,17 @@
 $(document).ready(function(){
 
 	// init foundation (for form validation via abide)
+	$('#form1_name, #form1_email, #form1_message').prop('required', true)
+	$('#form1_email').prop('pattern', 'email')
+	$('form').attr('data-abide', '')
 	$(document).foundation();
+
+	setTimeout(function(){
+		$('.success').fadeOut(1000)
+	}, 5000)
 
 	// current page indicator
 	var currentPage = $('body').attr('id')
-	console.log(currentPage)
 	$('.' + currentPage).parent().addClass('active-page')
 
 	// mobile menu trigger
@@ -37,7 +43,7 @@ $(document).ready(function(){
 
 	    //get the top offset of the target anchor
 	    var target_offset = $("#"+trgt).offset(); 
-	    var target_top = target_offset.top - 155;
+	    var target_top = target_offset.top - 280;
 
 	    //goto that anchor by setting the body scroll top to anchor top
 	    $('html, body').animate({scrollTop:target_top}, 750);
