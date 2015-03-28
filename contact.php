@@ -1,3 +1,4 @@
+<?php include('perch/runtime.php');?>
 <?php include("inc/head-one.html"); ?>
   <title>Bondi Speed Shop – Contact</title>
 <?php include("inc/head-two.html"); ?>

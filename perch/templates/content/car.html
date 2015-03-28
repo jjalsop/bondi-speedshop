@@ -1,13 +1,8 @@
-<?php include('perch/runtime.php');?>
-<?php include("inc/head-one.html"); ?>
-  <title>Bondi Speed Shop – Name of Car</title>
-<?php include("inc/head-two.html"); ?>
-<body id="cars">
-<?php include("inc/nav.html"); ?>
-  <section id="car" class="car-hero" style="background-image:url(img/test-car.jpg)">
+<section id="car" class="car-hero" style="background-image: url(<perch:content id="featured-image" type="image" label="Hero Image" width="1280"/>);">
     <div class="black-overlay">
       <div class="introduction">
-        <h1>1976 Name of Car</h1>
+        <h1><perch:content id="title" type="text" label="Name of Car" required="true" title="true" /></h1>
+        <perch:content id="slug" for="title" type="slug" suppress="true" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis officia ipsum amet possimus maiores necessitatibus incidunt dolore voluptates officiis, unde omnis ullam, reiciendis, temporibus nam voluptatum veritatis nobis quaerat! Officiis deserunt ipsum necessitatibus at.</p>
         <a href="#enquire" class="button scroll">Enquire Now</a>
       </div>
@@ -70,6 +65,3 @@
       </div>
     </div>
   </section>
-  <?php include("inc/footer.html"); ?> 
-</body>
-<?php include("inc/scripts.html"); ?> 
