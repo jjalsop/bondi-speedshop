@@ -180,7 +180,7 @@ a {
   -transition: color, 400ms; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -231,7 +231,7 @@ p {
           padding: 0; } }
       #main-nav ul li a {
         color: #d9d9d9;
-        font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+        font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
         #main-nav ul li a:hover {
           color: #a6a6a6; }
         @media screen and (max-width: 720px) {
@@ -281,7 +281,7 @@ footer {
     display: table;
     clear: both; }
   footer p, footer a {
-    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     color: #666666;
     margin: 0; }
@@ -300,7 +300,7 @@ footer {
 
 .button {
   background: none;
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
@@ -402,7 +402,7 @@ html, body {
 
 body {
   font-size: 16px;
-  font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,17 @@
 <?php include("inc/head-two.html"); ?>
 <body id="cars">
 <?php include("inc/nav.html"); ?>
-  
+
+
+  <?php
+  perch_content_create('Cars', array(
+        'template' => 'car.html',
+        'filter' => 'slug',
+        'match' => 'eq',
+        'value' => perch_get('s'),
+        'count' => 1,
+   )); 
+  ?>
 
   <?php
   if (perch_get('s')) {
