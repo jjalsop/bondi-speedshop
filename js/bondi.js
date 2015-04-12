@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	var numberOfStrips = 4
+	var number = 1 + Math.floor(Math.random() * numberOfStrips);
+	$('.strip').each(function(){
+		$(this).removeClass('strip-1')
+		var newStrip = "strip-" + number 
+		$(this).addClass(newStrip)
+	})
+
 	// init foundation (for form validation via abide)
 	$('#form1_name, #form1_email, #form1_message').prop('required', true)
 	$('#form1_email').prop('pattern', 'email')

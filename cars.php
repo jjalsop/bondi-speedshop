@@ -6,13 +6,14 @@
 <?php include("inc/nav.html"); ?>
 
 
+
   <?php
-  perch_content_create('Cars', array(
+  perch_content_create('Cars for Sale', array(
         'template' => 'car.html',
         'filter' => 'slug',
         'match' => 'eq',
         'value' => perch_get('s'),
-        'count' => 1,
+        'multiple' => true
    )); 
   ?>
 
@@ -20,7 +21,7 @@
   if (perch_get('s')) {
 
    // Detail mode
-   perch_content_custom('Cars', array(
+   perch_content_custom('Cars for Sale', array(
         'template' => 'car.html',
         'filter' => 'slug',
         'match' => 'eq',
@@ -30,7 +31,7 @@
   } else {
 
    // List mode
-   perch_content_custom('Cars', array(
+   perch_content_custom('Cars for Sale', array(
         'template' => 'car-listing.html',
    )); 
   }

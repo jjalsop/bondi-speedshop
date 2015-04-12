@@ -7,13 +7,25 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 700
 	text-transform: uppercase 
 	letter-spacing: 16px
+	+at($small)
+		letter-spacing: 5px
 h1
 	// to do
+	+at($small)
+		font-size: 1em
 h2
 	// to do
 h3 
 	font-size: 24px
 	letter-spacing: 10px
+	+at($small)
+		font-size: 1em
+		letter-spacing: 5px
 p 
 	text-transform: lowercase
 	font-weight: 300
+	+at($small)
+		font-size: 0.8em
+.introduction p 
+	+at($small)
+		font-size: 0.8em

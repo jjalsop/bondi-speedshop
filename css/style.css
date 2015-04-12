@@ -46,6 +46,9 @@ section.page-hero, section.car-hero {
 
 section.car-hero {
   min-height: 655px; }
+  @media screen and (max-width: 720px) {
+    section.car-hero {
+      min-height: 0; } }
   section.car-hero .introduction {
     width: 50%;
     padding-top: 6em; }
@@ -78,10 +81,12 @@ section#contact {
     section#contact {
       height: 400px; } }
 
-section#car-listing:after {
-  content: "";
-  display: table;
-  clear: both; }
+section#car-listing {
+  background-color: #181517; }
+  section#car-listing:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .car-in-list {
   width: 50%;
@@ -92,7 +97,8 @@ section#car-listing:after {
   background-repeat: no-repeat; }
   @media screen and (max-width: 720px) {
     .car-in-list {
-      width: 100%; } }
+      width: 100%;
+      height: 240px; } }
   .car-in-list .car-details {
     width: 80%;
     max-width: 480px;
@@ -136,7 +142,12 @@ section.car-hero .black-overlay {
 
 .content-section {
   padding: 6.5em 0;
-  background: #181517; }
+  background: #181517;
+  height: auto; }
+  .content-section:after {
+    content: "";
+    display: table;
+    clear: both; }
   .content-section h1, .content-section h2, .content-section h3 {
     margin-top: 0;
     text-align: center; }
@@ -163,16 +174,25 @@ section#owner-founder {
   height: 135px;
   width: 100%;
   background-repeat: repeat-x; }
+  @media screen and (max-width: 720px) {
+    .strip {
+      height: 50px; } }
 
 .home-strip {
   position: absolute;
   bottom: 0; }
 
-.strip-one {
-  background-image: url("../img/strip-one.jpg"); }
+.strip-1 {
+  background-image: url("../img/strip-1.jpg"); }
 
-.strip-two {
-  background-image: url("../img/strip-two.jpg"); }
+.strip-2 {
+  background-image: url("../img/strip-2.jpg"); }
+
+.strip-3 {
+  background-image: url("../img/strip-3.jpg"); }
+
+.strip-4 {
+  background-image: url("../img/strip-4.jpg"); }
 
 a {
   -webkit-transition: color, 400ms;
@@ -185,14 +205,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 16px; }
+  @media screen and (max-width: 720px) {
+    h1, h2, h3, h4, h5, h6 {
+      letter-spacing: 5px; } }
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 1em; } }
 
 h3 {
   font-size: 24px;
   letter-spacing: 10px; }
+  @media screen and (max-width: 720px) {
+    h3 {
+      font-size: 1em;
+      letter-spacing: 5px; } }
 
 p {
   text-transform: lowercase;
   font-weight: 300; }
+  @media screen and (max-width: 720px) {
+    p {
+      font-size: 0.8em; } }
+
+@media screen and (max-width: 720px) {
+  .introduction p {
+    font-size: 0.8em; } }
 
 #nav-container {
   position: fixed;
@@ -297,6 +335,9 @@ footer {
     footer ul li {
       display: inline-block;
       margin-left: 3em; }
+  @media screen and (max-width: 720px) {
+    footer .right {
+      display: none; } }
 
 .button {
   background: none;
@@ -312,9 +353,16 @@ footer {
   .button:hover {
     background: #fff;
     color: #181517; }
+  @media screen and (max-width: 720px) {
+    .button {
+      padding: 10px 20px 7px 20px;
+      font-size: 10px; } }
 
 .button.full-width {
   width: 100%; }
+
+.introduction .button {
+  margin-top: 15px; }
 
 input[type="text"], input[type="email"], textarea {
   background: none;
@@ -370,11 +418,14 @@ form {
     margin: 0; }
 
 #slider .item {
-  height: 570px;
+  height: 770px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
+  @media screen and (max-width: 720px) {
+    #slider .item {
+      height: 300px; } }
 
 .owl-controls {
   position: absolute;
@@ -385,10 +436,16 @@ form {
 .owl-next {
   position: absolute;
   right: 50px; }
+  @media screen and (max-width: 720px) {
+    .owl-next {
+      right: 15px; } }
 
 .owl-prev {
   position: absolute;
   left: 50px; }
+  @media screen and (max-width: 720px) {
+    .owl-prev {
+      left: 15px; } }
 
 .owl-next, .owl-prev {
   -webkit-transition: opacity, 400ms;
@@ -396,6 +453,10 @@ form {
   -transition: opacity, 400ms; }
   .owl-next:hover, .owl-prev:hover {
     opacity: 0.8; }
+  @media screen and (max-width: 720px) {
+    .owl-next, .owl-prev {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5); } }
 
 html, body {
   height: 100%; }

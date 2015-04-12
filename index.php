@@ -10,6 +10,6 @@
       <p>everything in moderation except for cubic inches</p>
     </div>
   </section>
-  <section class="strip strip-one home-strip"></section>
+  <section class="strip strip-1 home-strip"></section>
 </body>
 <?php include("inc/scripts.html"); ?> 
