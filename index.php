@@ -6,7 +6,7 @@
 <?php include("inc/nav.html"); ?>
   <section id="home">
     <div class="introduction">
-      <h1>Bondi Speedshop</h1>
+      <h1>Bondi Speed Shop</h1>
       <p>everything in moderation except for cubic inches</p>
     </div>
   </section>
